@@ -1,5 +1,6 @@
 # I use the repository, Jim Angel "jimangel" and I made changes to the ubuntu 20 version.
 
+#!/bin/bash
 
 sudo su
 
