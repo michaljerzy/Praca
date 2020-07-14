@@ -3,6 +3,19 @@
 
 sudo su
 
+
+#update apt-cache
+apt update -y
+apt upgrade -y
+
+# most likely is already installed
+apt -y install open-vm-tools
+
+#Stop services for cleanup
+service rsyslog stop
+
+
+
 if [ `id -u` -ne 0 ]; then
 	echo Need sudo
 	exit 1
@@ -10,9 +23,7 @@ fi
 
 set -v
 
-#update apt-cache
-apt update -y
-apt upgrade -y
+
 
 #install packages
 apt install -y open-vm-tools
