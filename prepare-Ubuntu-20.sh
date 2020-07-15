@@ -26,13 +26,6 @@ fi
 set -v
 
 
-
-#install packages
-apt install -y open-vm-tools
-
-#Stop services for cleanup
-service rsyslog stop
-
 #clear audit logs
 if [ -f /var/log/wtmp ]; then
     truncate -s0 /var/log/wtmp
