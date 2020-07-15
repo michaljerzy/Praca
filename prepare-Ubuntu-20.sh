@@ -3,9 +3,6 @@
 
 # I use the repository, Jim Angel "jimangel" and I made changes to the ubuntu 20 version.
 
-sudo su
-
-
 #update apt-cache
 apt update -y
 apt upgrade -y
