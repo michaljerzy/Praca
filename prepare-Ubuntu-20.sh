@@ -100,4 +100,4 @@ cat /dev/null > ~/.bash_history && history -c
 history -w
 
 #shutdown
-#shutdown -h now
+shutdown -h now
