@@ -85,7 +85,7 @@ sed -i 's/optional: true/dhcp-identifier: mac/g' /etc/netplan/01-network-manager
 
 
 # cleans out all of the cloud-init cache / logs - this is mainly cleaning out networking info
-apt-get install cloud-init
+apt-get install cloud-init -y
 cloud-init clean --logs
 
 #cleanup shell history
